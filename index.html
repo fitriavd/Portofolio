@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+     <!-- <meta name="viewport"> tag as well for proper responsive behavior in mobile devices. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <title>Assigment 2</title>
+  </head>
+  <body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#" >Hacktiv8</a><!-- membuat logo/brand -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"><!-- membuat navbar / ms-auto artinya posisi textnya akan berada di ujung kanan | mb-lg-0 artinya margin bottom : 0 -->
+              
+              <li class="nav-item"><!-- menu profil -->
+                <a class="nav-link btn btn-light" aria-current="page" href="#">Profil</a>
+              </li>
+              
+              <li class="nav-item"><!-- menu portofolio -->
+                <a class="nav-link btn btn-light" href="portofolio.html">Portofolio</a>
+              </li>
+
+              <li class="nav-item dropdown"><!-- menu dropdown tutorial -->
+                <a class="nav-link dropdown-toggle btn btn-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tutorial
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">CSS</a></li>
+                  <li><a class="dropdown-item" href="#">Javascript</a></li>
+                  <li><a class="dropdown-item" href="#">JQuery</a></li>
+                  <li><a class="dropdown-item" href="#">CodeIgniter</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- membuat button -->
+            <button type="button" class="btn btn-light">Login</button>
+            <button type="button" class="btn btn-primary">Daftar</button>
+          </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- jumbotron section start -->
+    <section>
+      <div class="container mt-4">
+        <div class="jumbotron text-center bg-body-secondary p-5">
+          <h1 class="card-title">Selamat datang di www.hacktiv8.com!</h1>
+              <p class="card-text">Tutorial pemrograman bahasa indonesia terlengkap di muka bumi.</p>
+              <a href="#" class="btn btn-primary mt-4">Mulai Belajar!</a>
+        </div>
+      </div>
+    </section>
+    <!-- jumbotron section end -->
+
+    <!-- card section start -->
+    <section>
+      <div class="container p-4"> <!-- memberikan jarak agar lebih menjorok kedalam -->
+        <div class="row">
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/logo-jquery.png" class="img-fluid" alt="logo-jquery" width="200px">
+                <h4 class="card-title">Tutorial JQuery</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolor dolore amet repudiandae?
+                  Nihil magni soluta delectus voluptatem, vitae aliquam ut quibusdam veritatis dolorem eveniet!
+                </p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/logo-jquery.png" class="img-fluid" alt="logo-jquery" width="200px">
+                <h4 class="card-title mb-3">Tutorial Ionic</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolor dolore amet repudiandae?
+                  Nihil magni soluta delectus voluptatem, vitae aliquam ut quibusdam veritatis dolorem eveniet!
+                </p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/logo-jquery.png" class="img-fluid" alt="logo-jquery" width="200px">
+                <h4 class="card-title mb-3">Tutorial CodeIgniter</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolor dolore amet repudiandae?
+                  Nihil magni soluta delectus voluptatem, vitae aliquam ut quibusdam veritatis dolorem eveniet!
+                </p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/logo-jquery.png" class="img-fluid" alt="logo-jquery" width="200px">
+                <h4 class="card-title mb-3">Tutorial Bootstrap</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi dolor dolore amet repudiandae?
+                  Nihil magni soluta delectus voluptatem, vitae aliquam ut quibusdam veritatis dolorem eveniet!
+                </p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- card section end -->
+
+    <!-- footer start -->
+    <footer class="p-3 bg-body-secondary position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Copyright &copy; 2023 Fitria Vuspita Dewi. All rights reserved
+          </div>
+          <div class="col text-end"> <!-- pakai text-end agar text berada disebelah kanan -->
+            Develop by Fitria Vuspita Dewi
+          </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    
+
+    <!-- Bootstrap bundle with papper -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
