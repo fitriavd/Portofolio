@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- link custom file css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Portofolio</title>
+  </head>
+  <body class="bg-body-tertiary">
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white p-2">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-lg-0"><!-- membuat navbar / ms-auto artinya posisi textnya akan berada di ujung kanan  -->
+            
+            <li class="nav-item"><!-- membuat menu home -->
+              <a class="nav-link btn btn-light" href="#home">HOME</a>
+            </li>
+
+            <li class="nav-item"><!-- membuat menu product -->
+              <a class="nav-link btn btn-light" href="#product">PRODUCT</a>
+            </li>
+
+            <li class="nav-item"><!-- membuat menu gallery -->
+              <a class="nav-link btn btn-light" href="#gallery">GALLERY</a>
+            </li>
+
+            <li class="nav-item"><!-- membuat menu blog -->
+              <a class="nav-link btn btn-light" href="#blog">BLOG</a>
+            </li>
+
+            <li class="nav-item"><!-- membuat menu my inventory -->
+              <a class="nav-link btn btn-light" href="#myinventory">MY INVENTORY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- profile section start -->
+    <section class="m-5">
+      <div class="container bg-white">
+        <div class="row align-items-center">
+          <div class="col-4 col-md-2">
+            <img src="img/logo_pp.png" alt="profil-picture" class="img-fluid rounded-circle" width="200px">  
+          </div>
+
+            <div class="col-md-4 col-xl-3">
+              <h4 id="namaProfile">Fitria Vuspita</h4>
+              <p id="roleProfile">Web Developer</p>
+              <button type="button" class="btn btn-primary" onclick="EditData()">Edit</button>
+              <button type="button" class="btn btn-outline-success" onclick="ResumeData()">Resume</button>
+            </div>
+
+            <div class="col-4 col-md-2 col-sm-3 p-3 border-start">
+              <p class="fw-bold">Availability</p>
+              <p class="fw-bold">Usia</p>  
+              <p class="fw-bold">Lokasi</p>  
+              <p class="fw-bold">Pengalaman</p>  
+              <p class="fw-bold">Email</p>    
+            </div>
+            
+            <div class="col-8 col-md-4 col-sm-4 p-3">
+              <p id="availabilityProfile">Full Time</p>
+              <p id="usiaProfile">20</p>  
+              <p id="lokasiProfile">Bogor, indonesia</p>  
+              <p id="pengalamanProfile">2</p>  
+              <p id="emailProfile">fitriavuspita@gmail.com</p>    
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- profile section end -->
+
+    <!-- form section start -->
+    <section>
+    <div class="container bg-white">
+      <form class="form" id="profile-form">
+        <div class="form-group">
+          <label for="nama" class="form-label fw-bold">Nama</label>
+          <input type="text" class="form-control border-dark mb-3" id="namaForm" required>
+          <label for="role" class="form-label fw-bold">Role</label>
+          <input type="text" class="form-control border-dark mb-3" id="roleForm" required>
+          <label for="availability" class="form-label fw-bold">Availability</label>
+          <input type="text" class="form-control border-dark mb-3" id="availabilityForm" required>
+          <label for="age" class="form-label fw-bold">Age</label>
+          <input type="text" class="form-control border-dark mb-3" id="usiaForm" required>
+          <label for="lokasi" class="form-label fw-bold">Lokasi</label>
+          <input type="text" class="form-control border-dark mb-3" id="lokasiForm" required>
+          <label for="years_experience" class="form-label fw-bold">Years Experience</label>
+          <input type="text" class="form-control border-dark mb-3" id="pengalamanForm" required>
+          <label for="email" class="form-label fw-bold">Email</label>
+          <input type="email" class="form-control border-dark mb-3" id="emailForm" required>
+            <div class="d-grid gap-2 mt-3">
+              <button class="btn btn-success fw-bold mb-3" type="submit">SUBMIT</button>
+            </div>
+        </div>
+      </form>
+    </div>
+    </section>
+    <!-- form section end -->
+
+    <!-- link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap bundle with papper -->
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- link custom file js -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
